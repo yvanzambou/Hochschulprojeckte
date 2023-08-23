@@ -1,0 +1,16 @@
+Willkommen bei VAMPIRE SURVIVORS
+
+1- Öffnen Sie die Datei vs_start.html, um das Spiel im Browser zu laden.
+
+2- Clicken Sie jetzt auf den PLAY-Button, um das Spiel zu beginnen.
+
+3- Regeln:
+Sie müssen die Pfeiltasten (oben, unten, rechts und links) benutzen, um sich (weiß) auf dem Spielfeld bewegen zu können und die Zombie (rot) auszuweichen, die zu Ihnen kommen.
+
+4- Ziel des Spiels: Sie sollen lange wie möglich am Leben bleiben und Punkte sammeln.
+
+5- Falls Sie von einem Zombie getroffen werden, ist das Spiel zu Ende.
+
+6- Sie bekommen am Ende des Spiels die erreichten Punkten, und die Möglichkeit nochmal zu spielen.
+
+Viel Spaß und viel Glück !!!
