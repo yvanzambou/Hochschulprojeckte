@@ -1,3 +1,3 @@
 # Hochschulprojekte
 
-Hier finden Sie Projekte, die ich in rahmen meines Studiums umgesetzt habe.
+Hier finden Sie Projekte, die ich in rahmen meines Studiums entwickelt habe.
