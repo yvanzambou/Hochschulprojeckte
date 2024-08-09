@@ -1,251 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="bf-style.css">
-		<title>Byte Fiddler</title>
-	</head>
-	<body>
-		<div class="titel">Byte Fiddler</div>
-		<div class="hinweis">Mindestauflösung: 1105 x 645</div>
 
-			<div class="dark-mode">
-				<a class="light"><svg class="light-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M375.7 19.7c-1.5-8-6.9-14.7-14.4-17.8s-16.1-2.2-22.8 2.4L256 61.1 173.5 4.2c-6.7-4.6-15.3-5.5-22.8-2.4s-12.9 9.8-14.4 17.8l-18.1 98.5L19.7 136.3c-8 1.5-14.7 6.9-17.8 14.4s-2.2 16.1 2.4 22.8L61.1 256 4.2 338.5c-4.6 6.7-5.5 15.3-2.4 22.8s9.8 13 17.8 14.4l98.5 18.1 18.1 98.5c1.5 8 6.9 14.7 14.4 17.8s16.1 2.2 22.8-2.4L256 450.9l82.5 56.9c6.7 4.6 15.3 5.5 22.8 2.4s12.9-9.8 14.4-17.8l18.1-98.5 98.5-18.1c8-1.5 14.7-6.9 17.8-14.4s2.2-16.1-2.4-22.8L450.9 256l56.9-82.5c4.6-6.7 5.5-15.3 2.4-22.8s-9.8-12.9-17.8-14.4l-98.5-18.1L375.7 19.7zM269.6 110l65.6-45.2 14.4 78.3c1.8 9.8 9.5 17.5 19.3 19.3l78.3 14.4L402 242.4c-5.7 8.2-5.7 19 0 27.2l45.2 65.6-78.3 14.4c-9.8 1.8-17.5 9.5-19.3 19.3l-14.4 78.3L269.6 402c-8.2-5.7-19-5.7-27.2 0l-65.6 45.2-14.4-78.3c-1.8-9.8-9.5-17.5-19.3-19.3L64.8 335.2 110 269.6c5.7-8.2 5.7-19 0-27.2L64.8 176.8l78.3-14.4c9.8-1.8 17.5-9.5 19.3-19.3l14.4-78.3L242.4 110c8.2 5.7 19 5.7 27.2 0zM256 368a112 112 0 1 0 0-224 112 112 0 1 0 0 224zM192 256a64 64 0 1 1 128 0 64 64 0 1 1 -128 0z"/></svg></a>
-				<a class="dark"><svg class="dark-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M144.7 98.7c-21 34.1-33.1 74.3-33.1 117.3c0 98 62.8 181.4 150.4 211.7c-12.4 2.8-25.3 4.3-38.6 4.3C126.6 432 48 353.3 48 256c0-68.9 39.4-128.4 96.8-157.3zm62.1-66C91.1 41.2 0 137.9 0 256C0 379.7 100 480 223.5 480c47.8 0 92-15 128.4-40.6c1.9-1.3 3.7-2.7 5.5-4c4.8-3.6 9.4-7.4 13.9-11.4c2.7-2.4 5.3-4.8 7.9-7.3c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-3.7 .6-7.4 1.2-11.1 1.6c-5 .5-10.1 .9-15.3 1c-1.2 0-2.5 0-3.7 0c-.1 0-.2 0-.3 0c-96.8-.2-175.2-78.9-175.2-176c0-54.8 24.9-103.7 64.1-136c1-.9 2.1-1.7 3.2-2.6c4-3.2 8.2-6.2 12.5-9c3.1-2 6.3-4 9.6-5.8c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-3.6-.3-7.1-.5-10.7-.6c-2.7-.1-5.5-.1-8.2-.1c-3.3 0-6.5 .1-9.8 .2c-2.3 .1-4.6 .2-6.9 .4z"/></svg></a>
-				<div class="switch_dark-mode" style="left: 0px;"></div>
-			</div>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bf-style.css">
+	<link rel="icon" type="image/x-icon" href="fonts\bf-logo-256x256.ico">
+	<title>Byte Fiddler</title>
+</head>
 
-		<div class="board">
-			<div class="decimal tabelle">
-				<table>
-					<thead>
-						<tr>
-							<th>Decimal</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="decimal led">0</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
+<body>
+	<div class="titel">Byte Fiddler</div>
+	<div class="hinweis">Mindestauflösung: 1105 x 645</div>
 
-			<div class="hexadecimal tabelle">
-				<table>
-					<thead>
-						<tr>
-							<th>Hexadecimal</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="hex led">0x0</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
+	<div class="dark-mode">
+		<a class="light"><svg class="light-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+				<path
+					d="M375.7 19.7c-1.5-8-6.9-14.7-14.4-17.8s-16.1-2.2-22.8 2.4L256 61.1 173.5 4.2c-6.7-4.6-15.3-5.5-22.8-2.4s-12.9 9.8-14.4 17.8l-18.1 98.5L19.7 136.3c-8 1.5-14.7 6.9-17.8 14.4s-2.2 16.1 2.4 22.8L61.1 256 4.2 338.5c-4.6 6.7-5.5 15.3-2.4 22.8s9.8 13 17.8 14.4l98.5 18.1 18.1 98.5c1.5 8 6.9 14.7 14.4 17.8s16.1 2.2 22.8-2.4L256 450.9l82.5 56.9c6.7 4.6 15.3 5.5 22.8 2.4s12.9-9.8 14.4-17.8l18.1-98.5 98.5-18.1c8-1.5 14.7-6.9 17.8-14.4s2.2-16.1-2.4-22.8L450.9 256l56.9-82.5c4.6-6.7 5.5-15.3 2.4-22.8s-9.8-12.9-17.8-14.4l-98.5-18.1L375.7 19.7zM269.6 110l65.6-45.2 14.4 78.3c1.8 9.8 9.5 17.5 19.3 19.3l78.3 14.4L402 242.4c-5.7 8.2-5.7 19 0 27.2l45.2 65.6-78.3 14.4c-9.8 1.8-17.5 9.5-19.3 19.3l-14.4 78.3L269.6 402c-8.2-5.7-19-5.7-27.2 0l-65.6 45.2-14.4-78.3c-1.8-9.8-9.5-17.5-19.3-19.3L64.8 335.2 110 269.6c5.7-8.2 5.7-19 0-27.2L64.8 176.8l78.3-14.4c9.8-1.8 17.5-9.5 19.3-19.3l14.4-78.3L242.4 110c8.2 5.7 19 5.7 27.2 0zM256 368a112 112 0 1 0 0-224 112 112 0 1 0 0 224zM192 256a64 64 0 1 1 128 0 64 64 0 1 1 -128 0z" />
+			</svg></a>
+		<a class="dark"><svg class="dark-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+				<path
+					d="M144.7 98.7c-21 34.1-33.1 74.3-33.1 117.3c0 98 62.8 181.4 150.4 211.7c-12.4 2.8-25.3 4.3-38.6 4.3C126.6 432 48 353.3 48 256c0-68.9 39.4-128.4 96.8-157.3zm62.1-66C91.1 41.2 0 137.9 0 256C0 379.7 100 480 223.5 480c47.8 0 92-15 128.4-40.6c1.9-1.3 3.7-2.7 5.5-4c4.8-3.6 9.4-7.4 13.9-11.4c2.7-2.4 5.3-4.8 7.9-7.3c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-3.7 .6-7.4 1.2-11.1 1.6c-5 .5-10.1 .9-15.3 1c-1.2 0-2.5 0-3.7 0c-.1 0-.2 0-.3 0c-96.8-.2-175.2-78.9-175.2-176c0-54.8 24.9-103.7 64.1-136c1-.9 2.1-1.7 3.2-2.6c4-3.2 8.2-6.2 12.5-9c3.1-2 6.3-4 9.6-5.8c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-3.6-.3-7.1-.5-10.7-.6c-2.7-.1-5.5-.1-8.2-.1c-3.3 0-6.5 .1-9.8 .2c-2.3 .1-4.6 .2-6.9 .4z" />
+			</svg></a>
+		<div class="switch_dark-mode" style="left: 0px;"></div>
+	</div>
 
-		<div class="iso tabelle-right-top">
-				<table>
-					<thead>
-						<tr>
-							<th>ISO 8859-15</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="iso">NUL</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-
-		<div class="iso_board scrollbar">
+	<div class="board">
+		<div class="decimal tabelle">
 			<table>
 				<thead>
 					<tr>
-						<th class="board-right-titel">Char</th>
-						<th class="board-right-titel">Bin</th>
-						<th class="board-right-titel">Dec</th>
-						<th class="board-right-titel">Name</th>
+						<th>Decimal</th>
 					</tr>
 				</thead>
-				<tbody class="iso-tabelle">
+				<tbody>
+					<tr>
+						<td class="decimal led">0</td>
+					</tr>
 				</tbody>
 			</table>
 		</div>
 
-							<!-- tacho  -->
-							<div class="container">
-    <div id="tachometer">
-                  <div class="ii">
-                      <div><b><span class="num_1">0</span></b></div>
-                      <div><b></b></div>
-                      <div><b><span class="num_2">10</span></b></div>
-                      <div><b></b></div>
-                      <div><b><span class="num_3">20</span></b></div>
-                      <div><b></b></div>
-                      <div><b><span class="num_4">30</span></b></div>
-                      <div><b></b></div>
-                      <div><b><span class="num_5">40</span></b></div>
-                      <div><b></b></div>
-                      <div><b><span class="num_6">50</span></b></div>
-                      <div><b></b></div>
-                      <div><b><span class="num_7">60</span></b></div>
-                      <div><b></b></div>
-                      <div><b><span class="num_8">70</span></b></div>
-                      <div><b></b></div>
-                      <div><b><span class="num_9">80</span></b></div>
-                      <div><b></b></div>
-                      <div><b><span class="num_10">90</span></b></div>
-                      <div><b></b></div>
-                      <div><b><span class="num_11">100</span></b></div>
-                  </div> 
-          <div class="line"></div>
-         <div class="pin"><div class="inner"></div></div>
-         <div class="lamp"></div>
-         <div class="lamp-glass"></div>
-    </div>
-    <div class="percentage-screen">
-    	<div class="percentage">0.0%</div>
-    </div>
-</div>
-							<!-- tacho  -->
+		<div class="hexadecimal tabelle">
+			<table>
+				<thead>
+					<tr>
+						<th>Hexadecimal</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="hex led">0x0</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
 
+	<div class="iso tabelle-right-top">
+		<table>
+			<thead>
+				<tr>
+					<th>ISO 8859-15</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="iso">NUL</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 
-		<div class="byte-screen">
-			<svg width="0" height="0" viewBox="0 0 0 0">
-				<defs>
-					<g id="unit-h">
-						<path d="M0 20 L20 40 L180 40 L200 20 L180 0 L20 0 Z"></path>
-					</g>
-					<g id="unit-v">
-						<path d="M20 0 L0 20 L0 180 L20 200 L40 180 L40 20 Z"></path>
-					</g>
-				</defs>
-			</svg>
-			<div class="byte">
-				<svg id="bit-8" class="bin-0 bit-8" width="90" height="100" viewBox="0 0 260 480">
-					<use xlink:href="#unit-h" class="segment a" x="30" y="0"></use>
-					<use xlink:href="#unit-v" class="segment b" x="220" y="30"></use>
-					<use xlink:href="#unit-v" class="segment c" x="220" y="250"></use>
-					<use xlink:href="#unit-h" class="segment d" x="30" y="440"></use>
-					<use xlink:href="#unit-v" class="segment e" x="0" y="250"></use>
-					<use xlink:href="#unit-v" class="segment f" x="0" y="30"></use>
-					<use xlink:href="#unit-h" class="segment g" x="30" y="220"></use>
-				</svg>
-				<svg id="bit-7" class="bin-0 bit-7" width="90" height="100" viewBox="0 0 260 480">
-					<use xlink:href="#unit-h" class="segment a" x="30" y="0"></use>
-					<use xlink:href="#unit-v" class="segment b" x="220" y="30"></use>
-					<use xlink:href="#unit-v" class="segment c" x="220" y="250"></use>
-					<use xlink:href="#unit-h" class="segment d" x="30" y="440"></use>
-					<use xlink:href="#unit-v" class="segment e" x="0" y="250"></use>
-					<use xlink:href="#unit-v" class="segment f" x="0" y="30"></use>
-					<use xlink:href="#unit-h" class="segment g" x="30" y="220"></use>
-				</svg>
-				<svg id="bit-6" class="bin-0 bit-6" width="90" height="100" viewBox="0 0 260 480">
-					<use xlink:href="#unit-h" class="segment a" x="30" y="0"></use>
-					<use xlink:href="#unit-v" class="segment b" x="220" y="30"></use>
-					<use xlink:href="#unit-v" class="segment c" x="220" y="250"></use>
-					<use xlink:href="#unit-h" class="segment d" x="30" y="440"></use>
-					<use xlink:href="#unit-v" class="segment e" x="0" y="250"></use>
-					<use xlink:href="#unit-v" class="segment f" x="0" y="30"></use>
-					<use xlink:href="#unit-h" class="segment g" x="30" y="220"></use>
-				</svg>
-				<svg id="bit-5" class="bin-0 bit-5" width="90" height="100" viewBox="0 0 260 480">
-					<use xlink:href="#unit-h" class="segment a" x="30" y="0"></use>
-					<use xlink:href="#unit-v" class="segment b" x="220" y="30"></use>
-					<use xlink:href="#unit-v" class="segment c" x="220" y="250"></use>
-					<use xlink:href="#unit-h" class="segment d" x="30" y="440"></use>
-					<use xlink:href="#unit-v" class="segment e" x="0" y="250"></use>
-					<use xlink:href="#unit-v" class="segment f" x="0" y="30"></use>
-					<use xlink:href="#unit-h" class="segment g" x="30" y="220"></use>
-				</svg>
-				<svg id="bit-4" class="bin-0 bit-4" width="90" height="100" viewBox="0 0 260 480">
-					<use xlink:href="#unit-h" class="segment a" x="30" y="0"></use>
-					<use xlink:href="#unit-v" class="segment b" x="220" y="30"></use>
-					<use xlink:href="#unit-v" class="segment c" x="220" y="250"></use>
-					<use xlink:href="#unit-h" class="segment d" x="30" y="440"></use>
-					<use xlink:href="#unit-v" class="segment e" x="0" y="250"></use>
-					<use xlink:href="#unit-v" class="segment f" x="0" y="30"></use>
-					<use xlink:href="#unit-h" class="segment g" x="30" y="220"></use>
-				</svg>
-				<svg id="bit-3" class="bin-0 bit-3" width="90" height="100" viewBox="0 0 260 480">
-					<use xlink:href="#unit-h" class="segment a" x="30" y="0"></use>
-					<use xlink:href="#unit-v" class="segment b" x="220" y="30"></use>
-					<use xlink:href="#unit-v" class="segment c" x="220" y="250"></use>
-					<use xlink:href="#unit-h" class="segment d" x="30" y="440"></use>
-					<use xlink:href="#unit-v" class="segment e" x="0" y="250"></use>
-					<use xlink:href="#unit-v" class="segment f" x="0" y="30"></use>
-					<use xlink:href="#unit-h" class="segment g" x="30" y="220"></use>
-				</svg>
-				<svg id="bit-2" class="bin-0 bit-2" width="90" height="100" viewBox="0 0 260 480">
-					<use xlink:href="#unit-h" class="segment a" x="30" y="0"></use>
-					<use xlink:href="#unit-v" class="segment b" x="220" y="30"></use>
-					<use xlink:href="#unit-v" class="segment c" x="220" y="250"></use>
-					<use xlink:href="#unit-h" class="segment d" x="30" y="440"></use>
-					<use xlink:href="#unit-v" class="segment e" x="0" y="250"></use>
-					<use xlink:href="#unit-v" class="segment f" x="0" y="30"></use>
-					<use xlink:href="#unit-h" class="segment g" x="30" y="220"></use>
-				</svg>
-				<svg id="bit-1" class="bin-0 bit-1" width="90" height="100" viewBox="0 0 260 480">
-					<use xlink:href="#unit-h" class="segment a" x="30" y="0"></use>
-					<use xlink:href="#unit-v" class="segment b" x="220" y="30"></use>
-					<use xlink:href="#unit-v" class="segment c" x="220" y="250"></use>
-					<use xlink:href="#unit-h" class="segment d" x="30" y="440"></use>
-					<use xlink:href="#unit-v" class="segment e" x="0" y="250"></use>
-					<use xlink:href="#unit-v" class="segment f" x="0" y="30"></use>
-					<use xlink:href="#unit-h" class="segment g" x="30" y="220"></use>
-				</svg>
+	<div class="iso_board scrollbar">
+		<table>
+			<thead>
+				<tr>
+					<th class="board-right-titel">Char</th>
+					<th class="board-right-titel">Bin</th>
+					<th class="board-right-titel">Dec</th>
+					<th class="board-right-titel">Hex</th>
+					<th class="board-right-titel">Name</th>
+				</tr>
+			</thead>
+			<tbody class="iso-tabelle"></tbody>
+		</table>
+	</div>
+
+	<!-- tacho  -->
+	<div class="container">
+		<div id="tachometer">
+			<div class="ii">
+				<div><b><span class="num_0">0</span></b></div>
+				<div><b></b></div>
+				<div><b><span class="num_10">10</span></b></div>
+				<div><b></b></div>
+				<div><b><span class="num_20">20</span></b></div>
+				<div><b></b></div>
+				<div><b><span class="num_30">30</span></b></div>
+				<div><b></b></div>
+				<div><b><span class="num_40">40</span></b></div>
+				<div><b></b></div>
+				<div><b><span class="num_50">50</span></b></div>
+				<div><b></b></div>
+				<div><b><span class="num_60">60</span></b></div>
+				<div><b></b></div>
+				<div><b><span class="num_70">70</span></b></div>
+				<div><b></b></div>
+				<div><b><span class="num_80">80</span></b></div>
+				<div><b></b></div>
+				<div><b><span class="num_90">90</span></b></div>
+				<div><b></b></div>
+				<div><b><span class="num_100">100</span></b></div>
 			</div>
+			<div class="line"></div>
+			<div class="pin">
+				<div class="inner"></div>
+			</div>
+			<div class="lamp"></div>
+			<div class="lamp-glass"></div>
+		</div>
+		<div class="percentage-screen">
+			<div class="percentage">0.0%</div>
+		</div>
+	</div>
+	<!-- tacho  -->
 
-			<div class="schalter-screen">
+
+	<div class="byte-screen">
+		<svg width="0" height="0" viewBox="0 0 0 0">
+			<defs>
+				<g id="unit-h">
+					<path d="M0 20 L20 40 L180 40 L200 20 L180 0 L20 0 Z"></path>
+				</g>
+				<g id="unit-v">
+					<path d="M20 0 L0 20 L0 180 L20 200 L40 180 L40 20 Z"></path>
+				</g>
+			</defs>
+		</svg>
+		<div class="byte">
+			<svg id="bit-8" class="bin-0 bit-8" width="90" height="100" viewBox="0 0 260 480">
+				<use xlink:href="#unit-h" class="segment a" x="30" y="0"></use>
+				<use xlink:href="#unit-v" class="segment b" x="220" y="30"></use>
+				<use xlink:href="#unit-v" class="segment c" x="220" y="250"></use>
+				<use xlink:href="#unit-h" class="segment d" x="30" y="440"></use>
+				<use xlink:href="#unit-v" class="segment e" x="0" y="250"></use>
+				<use xlink:href="#unit-v" class="segment f" x="0" y="30"></use>
+			</svg>
+			<svg id="bit-7" class="bin-0 bit-7" width="90" height="100" viewBox="0 0 260 480">
+				<use xlink:href="#unit-h" class="segment a" x="30" y="0"></use>
+				<use xlink:href="#unit-v" class="segment b" x="220" y="30"></use>
+				<use xlink:href="#unit-v" class="segment c" x="220" y="250"></use>
+				<use xlink:href="#unit-h" class="segment d" x="30" y="440"></use>
+				<use xlink:href="#unit-v" class="segment e" x="0" y="250"></use>
+				<use xlink:href="#unit-v" class="segment f" x="0" y="30"></use>
+			</svg>
+			<svg id="bit-6" class="bin-0 bit-6" width="90" height="100" viewBox="0 0 260 480">
+				<use xlink:href="#unit-h" class="segment a" x="30" y="0"></use>
+				<use xlink:href="#unit-v" class="segment b" x="220" y="30"></use>
+				<use xlink:href="#unit-v" class="segment c" x="220" y="250"></use>
+				<use xlink:href="#unit-h" class="segment d" x="30" y="440"></use>
+				<use xlink:href="#unit-v" class="segment e" x="0" y="250"></use>
+				<use xlink:href="#unit-v" class="segment f" x="0" y="30"></use>
+			</svg>
+			<svg id="bit-5" class="bin-0 bit-5" width="90" height="100" viewBox="0 0 260 480">
+				<use xlink:href="#unit-h" class="segment a" x="30" y="0"></use>
+				<use xlink:href="#unit-v" class="segment b" x="220" y="30"></use>
+				<use xlink:href="#unit-v" class="segment c" x="220" y="250"></use>
+				<use xlink:href="#unit-h" class="segment d" x="30" y="440"></use>
+				<use xlink:href="#unit-v" class="segment e" x="0" y="250"></use>
+				<use xlink:href="#unit-v" class="segment f" x="0" y="30"></use>
+			</svg>
+			<svg id="bit-4" class="bin-0 bit-4" width="90" height="100" viewBox="0 0 260 480">
+				<use xlink:href="#unit-h" class="segment a" x="30" y="0"></use>
+				<use xlink:href="#unit-v" class="segment b" x="220" y="30"></use>
+				<use xlink:href="#unit-v" class="segment c" x="220" y="250"></use>
+				<use xlink:href="#unit-h" class="segment d" x="30" y="440"></use>
+				<use xlink:href="#unit-v" class="segment e" x="0" y="250"></use>
+				<use xlink:href="#unit-v" class="segment f" x="0" y="30"></use>
+			</svg>
+			<svg id="bit-3" class="bin-0 bit-3" width="90" height="100" viewBox="0 0 260 480">
+				<use xlink:href="#unit-h" class="segment a" x="30" y="0"></use>
+				<use xlink:href="#unit-v" class="segment b" x="220" y="30"></use>
+				<use xlink:href="#unit-v" class="segment c" x="220" y="250"></use>
+				<use xlink:href="#unit-h" class="segment d" x="30" y="440"></use>
+				<use xlink:href="#unit-v" class="segment e" x="0" y="250"></use>
+				<use xlink:href="#unit-v" class="segment f" x="0" y="30"></use>
+			</svg>
+			<svg id="bit-2" class="bin-0 bit-2" width="90" height="100" viewBox="0 0 260 480">
+				<use xlink:href="#unit-h" class="segment a" x="30" y="0"></use>
+				<use xlink:href="#unit-v" class="segment b" x="220" y="30"></use>
+				<use xlink:href="#unit-v" class="segment c" x="220" y="250"></use>
+				<use xlink:href="#unit-h" class="segment d" x="30" y="440"></use>
+				<use xlink:href="#unit-v" class="segment e" x="0" y="250"></use>
+				<use xlink:href="#unit-v" class="segment f" x="0" y="30"></use>
+			</svg>
+			<svg id="bit-1" class="bin-0 bit-1" width="90" height="100" viewBox="0 0 260 480">
+				<use xlink:href="#unit-h" class="segment a" x="30" y="0"></use>
+				<use xlink:href="#unit-v" class="segment b" x="220" y="30"></use>
+				<use xlink:href="#unit-v" class="segment c" x="220" y="250"></use>
+				<use xlink:href="#unit-h" class="segment d" x="30" y="440"></use>
+				<use xlink:href="#unit-v" class="segment e" x="0" y="250"></use>
+				<use xlink:href="#unit-v" class="segment f" x="0" y="30"></use>
+			</svg>
+		</div>
+
+		<div class="schalter-screen">
 			<div class="schalter schalter-8 bit-8">
-				<a class="links">0</a>
-				<a class="rechts">1</a>
+				<span class="links">0</span>
+				<span class="rechts">1</span>
 				<div class="switch switch-8"></div>
 			</div>
 			<div class="schalter schalter-7 bit-7">
-				<a class="links">0</a>
-				<a class="rechts">1</a>
+				<span class="links">0</span>
+				<span class="rechts">1</span>
 				<div class="switch switch-7"></div>
 			</div>
 			<div class="schalter schalter-6 bit-6">
-				<a class="links">0</a>
-				<a class="rechts">1</a>
+				<span class="links">0</span>
+				<span class="rechts">1</span>
 				<div class="switch switch-6"></div>
 			</div>
 			<div class="schalter schalter-5 bit-5">
-				<a class="links">0</a>
-				<a class="rechts">1</a>
+				<span class="links">0</span>
+				<span class="rechts">1</span>
 				<div class="switch switch-5"></div>
 			</div>
 			<div class="schalter schalter-4 bit-4">
-				<a class="links">0</a>
-				<a class="rechts">1</a>
+				<span class="links">0</span>
+				<span class="rechts">1</span>
 				<div class="switch switch-4"></div>
 			</div>
 			<div class="schalter schalter-3 bit-3">
-				<a class="links">0</a>
-				<a class="rechts">1</a>
+				<span class="links">0</span>
+				<span class="rechts">1</span>
 				<div class="switch switch-3"></div>
 			</div>
 			<div class="schalter schalter-2 bit-2">
-				<a class="links">0</a>
-				<a class="rechts">1</a>
+				<span class="links">0</span>
+				<span class="rechts">1</span>
 				<div class="switch switch-2"></div>
 			</div>
 			<div class="schalter schalter-1 bit-1">
-				<a class="links">0</a>
-				<a class="rechts">1</a>
+				<span class="links">0</span>
+				<span class="rechts">1</span>
 				<div class="switch switch-1"></div>
 			</div>
 		</div>
 	</div>
 
-		<script src="bf-script.js"></script>
-	</body>
+	<script src="bf-script.js"></script>
+</body>
+
 </html>

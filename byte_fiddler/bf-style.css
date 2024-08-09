@@ -1,50 +1,40 @@
 @font-face {
-	font-family: "advanced Led Board 7";
-	src: url(fonts/advanced-led-board-7.regular.ttf);
+    font-family: "advanced Led Board 7";
+    src: url(fonts/advanced-led-board-7.regular.ttf);
 }
 
 @font-face {
-	font-family: "Digital 7";
-	src: url(fonts/digital-7.monoitalic.ttf);
-}
-
-@font-face {
-	font-family: "Kanivore Digit";
-	src: url(fonts/karnivore.digit.ttf);
-}
-
-@font-face {
-	font-family: "Repetition Scrolling";
-	src: url(fonts/repetition-scrolling.regular.ttf);
+    font-family: "Digital 7";
+    src: url(fonts/digital-7.monoitalic.ttf);
 }
 
 .led {
-	font-family: "advanced Led Board 7";
+    font-family: "advanced Led Board 7";
 }
 
 th {
-	font-family: "Consolas";
-	font-size: 25px;
+    font-family: "Consolas";
+    font-size: 25px;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #232525;
-	font-family: Tahoma, sans-serif;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232525;
+    font-family: Tahoma, sans-serif;
+    box-sizing: border-box;
 }
 
 .titel {
-	font-family: "Digital 7";
-	font-size: 70px;
-	color: #0984e3;
-	position: absolute;
-	top: 10px;
+    font-family: "Digital 7";
+    font-size: 70px;
+    color: #0984e3;
+    position: absolute;
+    top: 10px;
 }
 
 .hinweis {
@@ -56,8 +46,8 @@ body {
 }
 
 .board {
-	position: absolute;
-	left: 50px;
+    position: absolute;
+    left: 50px;
     bottom: 22%;
 }
 
@@ -65,54 +55,54 @@ table {
     border-radius: 20px;
 }
 
-table, .board-right-body {
+table {
     background-color: black;
     border-collapse: collapse;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, .5);
 }
 
-.decimal > table > tbody > tr > td,
-.hexadecimal > table > tbody > tr > td,
-.tabelle-right-top > table > tbody > tr > td {
+.decimal>table>tbody>tr>td,
+.hexadecimal>table>tbody>tr>td,
+.tabelle-right-top>table>tbody>tr>td {
     width: 21vw;
     color: white;
     font-size: 12vh;
 }
 
-.decimal > table > thead > tr > th {
+.decimal>table>thead>tr>th {
     padding: 10px 75px;
 }
 
-.hexadecimal > table > thead > tr > th {
+.hexadecimal>table>thead>tr>th {
     padding: 10px 50px;
 }
 
-.tabelle-right-top > table > thead > tr > th {
+.tabelle-right-top>table>thead>tr>th {
     padding: 10px 60px;
 }
 
-.scrollbar > table > thead > tr > th {
+.scrollbar>table>thead>tr>th {
     padding: 10px 10px;
 }
 
 
-.scrollbar > td {
+.scrollbar>td {
     font-size: 20px;
     color: white;
 }
 
 thead {
-	background-color: #0984e3;
+    background-color: #0984e3;
     position: sticky;
     top: 0;
 }
 
 td {
-	padding: 10px 20px;
-	text-align: center;
+    padding: 10px 20px;
+    text-align: center;
 }
 
-.scrollbar > table > tbody > tr > td {
+.scrollbar>table>tbody>tr>td {
     width: 6vw;
     font-size: 20px;
     color: white;
@@ -120,7 +110,7 @@ td {
 }
 
 .tabelle {
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .tabelle-right-top {
@@ -130,33 +120,33 @@ td {
 }
 
 .byte {
-	padding-right: 25px;
+    padding-right: 25px;
 }
 
 .byte-screen {
-	background-color: black;
-	border-radius: 50px;
-	position: absolute;
-	bottom: 3%;
+    background-color: black;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 3%;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, .5);
     z-index: 3;
 }
 
 .byte-screen .byte {
-	position: relative;
-	display: inline-block;
-	margin: 10px;
-	font-size: 0;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    font-size: 0;
 }
 
 .byte-screen svg {
-	display: inline-block;
-	margin: 10px;
+    display: inline-block;
+    margin: 10px;
 }
 
 .byte-screen svg .segment {
-	fill: rgba(0, 0, 0, 0.1);
-	transition: .3s ease-in-out;
+    fill: rgba(0, 0, 0, 0.1);
+    transition: .3s ease-in-out;
 }
 
 .byte-screen svg.bin-0 .a,
@@ -167,7 +157,7 @@ td {
 .byte-screen svg.bin-0 .f,
 .byte-screen svg.bin-1 .b,
 .byte-screen svg.bin-1 .c {
-	fill: lime;
+    fill: lime;
 }
 
 .dark-mode {
@@ -210,14 +200,14 @@ td {
 }
 
 .schalter {
-	width: 80px;
-	height: 40px;
-	background-color: #282828;
-	color: white;
-	border-radius: 20px;
-	position: relative;
-	cursor: pointer;
-	margin: 0 15px 0 15px;
+    width: 80px;
+    height: 40px;
+    background-color: #282828;
+    color: white;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    margin: 0 15px 0 15px;
 }
 
 .schalter-active {
@@ -232,35 +222,36 @@ td {
 }
 
 .links {
-	margin-left: 15px;
-	
+    margin-left: 15px;
+
 }
 
 .rechts {
-	float: right;
-	margin-right: 15px;
+    float: right;
+    margin-right: 15px;
 }
 
-.rechts, .links {
-	font-size: 28px;
-	font-weight: bold;
-	line-height: 40px;
+.rechts,
+.links {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 40px;
 }
 
 .switch {
-	width: 40px;
-	height: 40px;
-	background-color: lightgray;
-	border-radius: 20px;
-	position: absolute;
-	top: 0px;
-	left: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    border-radius: 20px;
+    position: absolute;
+    top: 0px;
+    left: 40px;
 }
 
 .schalter-screen {
-	display: flex;
-	margin-left: 35px;
-	margin-bottom: 20px;
+    display: flex;
+    margin-left: 35px;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -270,18 +261,18 @@ td {
     bottom: 15%;
 }
 
-#tachometer{
-    background:#171717;
-    margin:100px auto;
-    width:400px;
-    height:400px;
+#tachometer {
+    background: #171717;
+    margin: 100px auto;
+    width: 400px;
+    height: 400px;
     box-shadow: inset 0px 0px 9px 3px rgba(0, 0, 0, 1);
     border: 5px solid #171717;
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; 
+    position: relative;
 }
 
 .ii {
@@ -289,15 +280,17 @@ td {
     width: 600px;
     height: 600px;
     z-index: 2;
-    
+
 }
+
 .ii div {
     position: absolute;
     width: 600px;
     height: 600px;
-    padding:103px;
+    padding: 103px;
     box-sizing: border-box;
 }
+
 .ii div b {
     position: absolute;
     display: block;
@@ -306,8 +299,9 @@ td {
     height: 20px;
     background: #FFF;
     margin: 0 -5px 0;
-    
+
 }
+
 .ii div:nth-child(2n+1) b {
     width: 8px;
     height: 35px;
@@ -317,70 +311,90 @@ td {
 .ii div:nth-child(1) {
     transform: rotate(260deg);
 }
+
 .ii div:nth-child(2) {
     transform: rotate(270deg);
 }
+
 .ii div:nth-child(3) {
     transform: rotate(280deg);
 }
+
 .ii div:nth-child(4) {
     transform: rotate(290deg);
 }
+
 .ii div:nth-child(5) {
     transform: rotate(300deg);
 }
+
 .ii div:nth-child(6) {
-    transform: rotate(310deg); 
+    transform: rotate(310deg);
 }
+
 .ii div:nth-child(7) {
     transform: rotate(320deg);
 }
+
 .ii div:nth-child(8) {
     transform: rotate(330deg);
 }
+
 .ii div:nth-child(9) {
     transform: rotate(340deg);
 }
+
 .ii div:nth-child(10) {
     transform: rotate(350deg);
 }
+
 .ii div:nth-child(11) {
     transform: rotate(0deg);
 }
+
 .ii div:nth-child(12) {
     transform: rotate(10deg);
 }
+
 .ii div:nth-child(13) {
     transform: rotate(20deg);
 }
+
 .ii div:nth-child(14) {
     transform: rotate(30deg);
 }
+
 .ii div:nth-child(15) {
     transform: rotate(40deg);
 }
+
 .ii div:nth-child(16) {
     transform: rotate(50deg);
 }
+
 .ii div:nth-child(17) {
     transform: rotate(60deg);
 }
+
 .ii div:nth-child(18) {
     transform: rotate(70deg);
 }
+
 .ii div:nth-child(19) {
     transform: rotate(80deg);
 }
+
 .ii div:nth-child(20) {
     transform: rotate(90deg);
 }
+
 .ii div:nth-child(21) {
     transform: rotate(100deg);
 }
 
 
 [class^="num_"] {
-    color:#FFF;
+    color: #FFF;
     display: block;
     position: absolute;
     width: 10px;
@@ -388,27 +402,80 @@ td {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Arial', sans-serif;
-    text-decoration:none;
-      
+    text-decoration: none;
+
 }
 
-.num_1 {transform: rotate(100deg);top:37px;}
-.num_2 {transform: rotate(80deg);top:35px; left:0px}
-.num_3 {transform: rotate(60deg);top:35px; left: -3px;}
-.num_4 {transform: rotate(40deg);top:35px; left:-9px}
-.num_5 {transform: rotate(20deg);top:35px;left:-13px}
-.num_6 {transform: rotate(360deg);top:35px;left:-12px}
-.num_7 {transform: rotate(340deg);top:45px;left:-13px;}
-.num_8 {transform: rotate(320deg);top:50px; left:-9px}
-.num_9 {transform: rotate(300deg);top:55px;left:-8px}
-.num_10 {transform: rotate(280deg);top:58px;left:-3px}
-.num_11 {transform: rotate(260deg);top:74px;left:6px}
+.num_0 {
+    transform: rotate(100deg);
+    top: 37px;
+}
+
+.num_10 {
+    transform: rotate(80deg);
+    top: 35px;
+    left: 0px
+}
+
+.num_20 {
+    transform: rotate(60deg);
+    top: 35px;
+    left: -3px;
+}
+
+.num_30 {
+    transform: rotate(40deg);
+    top: 35px;
+    left: -9px
+}
+
+.num_40 {
+    transform: rotate(20deg);
+    top: 35px;
+    left: -13px
+}
+
+.num_50 {
+    transform: rotate(360deg);
+    top: 35px;
+    left: -12px
+}
+
+.num_60 {
+    transform: rotate(340deg);
+    top: 45px;
+    left: -13px;
+}
+
+.num_70 {
+    transform: rotate(320deg);
+    top: 50px;
+    left: -9px
+}
+
+.num_80 {
+    transform: rotate(300deg);
+    top: 55px;
+    left: -8px
+}
+
+.num_90 {
+    transform: rotate(280deg);
+    top: 58px;
+    left: -3px
+}
+
+.num_100 {
+    transform: rotate(260deg);
+    top: 74px;
+    left: 6px
+}
 
 .pin {
     width: 50px;
     height: 50px;
-    left:50%;
-    top:50%;
+    left: 50%;
+    top: 50%;
     margin: -25px 0 0 -25px;
     background-color: #343536;
     border-radius: 50%;
@@ -439,12 +506,9 @@ td {
     transform-origin: 50% 100%;
     margin: -175px -8px 0;
     padding: 175px 6px 0;
-    z-index:2;
+    z-index: 2;
     border-radius: 50% 50% 0 0;
-    transform:rotate(-100deg);
-    animation: pendulum;
-    animation-iteration-count: 1;
-    animation-duration: 5s;
+    transform: rotate(-100deg);
     transition: transform 1s ease-out;
 }
 
@@ -491,9 +555,9 @@ td {
     bottom: 25%;
 }
 
- .board-right-titel {
+.board-right-titel {
     font-size: 20px;
- }
+}
 
 .scrollbar {
     max-height: 38%;
@@ -504,16 +568,18 @@ td {
 
 /* Responsive Design */
 
-@media (min-width: 1105px){
+@media (min-width: 1105px) {
     .hinweis {
         display: none;
     }
+
     svg {
         width: 50px;
         height: 60px;
     }
 
-    div .schalter, div .schalter-active {
+    div .schalter,
+    div .schalter-active {
         margin: 2px;
     }
 
@@ -536,13 +602,27 @@ td {
 }
 
 @media (max-width: 1104px) {
-    .byte-screen, .dark-mode, .board, .tabelle-right-top, .iso_board, .container, .titel {
+
+    .byte-screen,
+    .dark-mode,
+    .board,
+    .tabelle-right-top,
+    .iso_board,
+    .container,
+    .titel {
         display: none;
     }
 }
 
 @media (max-height: 634px) {
-    .byte-screen, .dark-mode, .board, .tabelle-right-top, .iso_board, .container, .titel {
+
+    .byte-screen,
+    .dark-mode,
+    .board,
+    .tabelle-right-top,
+    .iso_board,
+    .container,
+    .titel {
         display: none;
     }
 }
@@ -562,7 +642,7 @@ td {
         top: 5%;
     }
 
-        .board {
+    .board {
         bottom: 18%;
     }
 
@@ -571,13 +651,13 @@ td {
     }
 }
 
-@media (min-height: 900px) and (max-height: 1023px){
+@media (min-height: 900px) and (max-height: 1023px) {
     .container {
         bottom: 22%;
     }
 }
 
-@media (min-height: 1024px){
+@media (min-height: 1024px) {
     .container {
         bottom: 25%;
     }
