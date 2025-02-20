@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Basis-Seite von Amazon{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="first-navbar">
+            <div class="nav-left">
+                <img class="logo" src="{{ asset('assets/images/amazon-logo.png') }}">
+                <div class="location">
+                    <img class="location-icon" src="{{ asset('assets/images/location-icon-2.png') }}">
+                    <div class="location-address">
+                        <span style="color: #ccc">Lieferung an Emden 26723</span>
+                        <span style="font-weight: bold">Standort aktualisieren</span>
+                    </div>
+                </div>
+            </div>
+            <div class="search-nav">
+                <div class="search-div">
+                    <div class="dropdown-button" id="dropdownButton">Alle &#11206;</div>
+                    <input type="text" class="search-fields" value="" placeholder="Amazon.de durchsuchen">
+                    <div class="search-glass">&#128269;</div>
+                </div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    {% for entry in entries %}
+                        <a href="#" onclick="selectOption('{{entry}}')">{{entry}}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="language-flag navRight">
+                    <div class="flag">
+                        <span class="black stripe"></span>
+                        <span class="red stripe"></span>
+                        <span class="gold stripe"></span>
+                    </div>
+                    <div>DE  &#11206;</div>
+                </div>
+                <div class="log-in navRight">
+                    <span>Hallo, anmelden</span>
+                    <span style="font-weight: bold">Konto und Listen &#11206;</span>
+                </div>
+                <div class="order navRight">
+                    <span>Warenrüchsendungen</span>
+                    <span style="font-weight: bold">und Bestellungen</span>
+                </div>
+                 <div class="cart-nav navRight">
+                    <div class="cart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                        </svg>
+                        <span class="cart-quantity">0</span>
+                    </div>
+                    <span class="cart-name">Einkaufswagen</span>
+                </div>
+            </div>
+        </nav>
+        <nav class="second-navbar-container">
+            <div class="second-navbar">
+                <a href="" class="all-btn-div" onclick="return false;">
+                    <div>
+                        <span><img src="{{ asset('assets/images/hm-icon.png') }}" class="hm-icon"></span> Alle</span>
+                    </div>
+                </a>
+                <div class="nav-div">
+                    {% for item in items %}
+                        <a class="nav-item" href="#">{{ item }}</a>
+                    {% endfor %}
+                </div>
+                <div class="publicity-div">
+                </div>
+            </div>
+            <div class="hmenu-container">
+                <div class="hmenu-canvas-background">
+                    <div class="hmenu-canvas">
+                        <div class="hmenu-close-icon"><img src="{{ asset('assets/images/close-icon.svg') }}" class="h-close-icon"></div>
+                        <a href="#" class="hmenu-customer-profile-link">
+                            <div class="hmenu-customer-profile">
+                                <div class="hmenu-customer-profile-left">
+                                    <img src="{{ asset('assets/images/avatar-icon.svg') }}" class="hmenu-customer-avatar-icon">
+                                </div>
+                                <div class="hmenu-customer-profile-right">
+                                    <div class="hmenu-customer-name">
+                                        <b>Hallo, anmelden</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="hmenu-content movedContent">
+                            <ul class="hmenu submenu">
+                                <li>
+                                    <a href="" class="hmenu-item toMain" style="padding-top: 0px;padding-bottom: 0px;" onclick="return false;">
+                                        <img class="hmenu-arrow" src="{{ asset('assets/images/menu-left-arrow.svg') }}" style="margin-left: 0px;">
+                                        <div class="hmenu-item hmenu-title" style="padding-top: 5px;">HAUPTMENU</div>
+                                    </a>
+                                </li>
+                                <li class="hmenu-separator"></li>
+                                <li><div class="hmenu-item hmenu-title">Buecher</div></li>
+                                <li><a href="" class="hmenu-item">Alle Buecher</a></li>
+                                <li><a href="" class="hmenu-item">Kindle eBooks</a></li>
+                                <li><a href="" class="hmenu-item">Kindle Unlimited</a></li>
+                                <li><a href="" class="hmenu-item">Prime Reading</a></li>
+                                <li><a href="" class="hmenu-item">Fachbuecher</a></li>
+                            </ul>
+                            <ul class="hmenu">
+                                <li><div class="hmenu-item hmenu-title">Im Trend</div></li>
+                                <li><a href="" class="hmenu-item">Bestseller</a></li>
+                                <li><a href="" class="hmenu-item">Neuerscheinungen</a></li>
+                                <li><a href="" class="hmenu-item">Aufsteiger des Tages</a></li>
+                                <li class="hmenu-separator"></li>
+                                <li><div class="hmenu-item hmenu-title">Digitale Inhalte & Geraete</div></li>
+                                <li><a href="" class="hmenu-item">Prime Video</a></li>
+                                <li><a href="" class="hmenu-item">Amazon Music</a></li>
+                                <li><a href="" class="hmenu-item">Amazon Appstore</a></li>
+                                <li><a href="" class="hmenu-item">Amazon Photos</a></li>
+                                <li><a href="" class="hmenu-item">Echo & Alexa</a></li>
+                                <li><a href="" class="hmenu-item">Fire TV</a></li>
+                                <li><a href="" class="hmenu-item">Fire-Tablets</a></li>
+                                <li><a href="" class="hmenu-item">Kindle eReader & Buecher</a></li>
+                                <li><a href="" class="hmenu-item">Audible Hoerbuecher</a></li>
+                                <li class="hmenu-separator"></li>
+                                <li><div class="hmenu-item hmenu-title">Alle Kategorien</div></li>
+                                <li>
+                                    <a href="" class="hmenu-item" id="submenu-btn" onclick="return false;">
+                                        <div>Buecher</div>
+                                        <img class="hmenu-arrow" src="{{ asset('assets/images/menu-right-arrow.svg') }}">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="hmenu-item">
+                                        <div>Filme, Serien, Musik & Games</div>
+                                        <img class="hmenu-arrow" src="{{ asset('assets/images/menu-right-arrow.svg') }}">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="hmenu-item">
+                                        <div>Elektronik & Computer</div>
+                                        <img class="hmenu-arrow" src="{{ asset('assets/images/menu-right-arrow.svg') }}">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="hmenu-item">
+                                        <div>Moebel Haushalt Tier & Baumarkt</div>
+                                        <img class="hmenu-arrow" src="{{ asset('assets/images/menu-right-arrow.svg') }}">
+                                    </a>
+                                </li>
+                                <ul class="hmenu-compress-section" id="hidden-menu">
+                                    <li class="hmenu-separator"></li>
+                                    <li>
+                                        <a href="" class="hmenu-item">
+                                        <div>Option 1</div>
+                                        <img class="hmenu-arrow" src="{{ asset('assets/images/menu-right-arrow.svg') }}">
+                                    </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="hmenu-item">
+                                        <div>Option 2</div>
+                                        <img class="hmenu-arrow" src="{{ asset('assets/images/menu-right-arrow.svg') }}">
+                                    </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="hmenu-item">
+                                        <div>Option 3</div>
+                                        <img class="hmenu-arrow" src="{{ asset('assets/images/menu-right-arrow.svg') }}">
+                                    </a>
+                                    </li>
+                                </ul>
+                                <li>
+                                    <a href="" class="hmenu-item" id="show-all" onclick="return false;">
+                                        <div>Alle anzeigen</div>
+                                        <img class="hmenu-arrow" src="{{ asset('assets/images/menu-down-arrow.svg') }}">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="hmenu-item" id="show-less" onclick="return false;">
+                                        <div>Weniger anzeigen</div>
+                                        <img class="hmenu-arrow" src="{{ asset('assets/images/menu-up-arrow.svg') }}">
+                                    </a>
+                                </li>
+                                <li class="hmenu-separator"></li>
+                                <li><div class="hmenu-item hmenu-title">PROGRAMME & FUNKTIONEN</div></li>
+                                <li>
+                                    <a href="" class="hmenu-item">
+                                        <div>Handmade</div>
+                                        <img class="hmenu-arrow" src="{{ asset('assets/images/menu-right-arrow.svg') }}">
+                                    </a>
+                                </li>
+                                <li><a href="" class="hmenu-item">Luxury Stores</a></li>
+                                <li><a href="" class="hmenu-item">Amazon Outlet</a></li>
+                                <li><a href="" class="hmenu-item">Geschenke & Wunschzettel</a></li>
+                                <li><a href="" class="hmenu-item">Alle anzeigen</a></li>
+                                <li class="hmenu-separator"></li>
+                                <li><div class="hmenu-item hmenu-title">HILFE & EINSTELLUNGEN</div></li>
+                                <li><a href="" class="hmenu-item">Mein Konto</a></li>
+                                <li><a href="" class="hmenu-item">[] Deutsch</a></li>
+                                <li><a href="" class="hmenu-item">[] Deutschland</a></li>
+                                <li><a href="" class="hmenu-item">Waerungseinstellungen</a></li>
+                                <li><a href="" class="hmenu-item">Kundenservice</a></li>
+                                <li><a href="" class="hmenu-item">Anmelden</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="navFooter">
+        <a class="navBackToTop" href="#">
+            <div class="navFooterBackToTop">
+                <span class="navFooterBackToTopText">Zurück zum Seintenanfang</span>
+            </div>
+        </a>
+        <div class="navFooterVerticalColumn">
+            <div class="col col1">
+                <span class="columnTitle">Über Amazon</span>
+                <ul>
+                    <li><a href="" class="column-item">Karriere bei Amazon</a></li>
+                    <li><a href="" class="column-item">Pressemitteilung</a></li>
+                    <li><a href="" class="column-item">Erfahre mehr über Amazon</a></li>
+                    <li><a href="" class="column-item">Impressum</a></li>
+                    <li><a href="" class="column-item">Amazon Science</a></li>
+                </ul>
+            </div>
+            <div class="col spacerInner"></div>
+            <div class="col col2">
+                <span class="columnTitle">Geld verdienen mit Amazon</span>
+                <ul>
+                    <li><a href="" class="column-item">Jetzt verkaufen</a></li>
+                    <li><a href="" class="column-item">Verkaufen bei Amazon Business</a></li>
+                    <li><a href="" class="column-item">Verkaufen bei Amazon Handmade</a></li>
+                    <li><a href="" class="column-item">Partnerprogramm</a></li>
+                    <li><a href="" class="column-item">Versand durch Amazon</a></li>
+                    <li><a href="" class="column-item">An Amazon liefern</a></li>
+                    <li><a href="" class="column-item">Deine Marke aufbauen und schützen</a></li>
+                    <li><a href="" class="column-item">Prime durch Verkäufer</a></li>
+                    <li><a href="" class="column-item">Bewerbe deine Produkte</a></li>
+                    <li><a href="" class="column-item">Dein Buch mit uns veröffentlichen</a></li>
+                    <li><a href="" class="column-item">Amazon Pay</a></li>
+                    <li><a href="" class="column-item">Hosten eines Amazon Hubs</a></li>
+                    <li><a href="" class="column-item">Mehr von "Mit uns Geld verdienen" anzeigen</a></li>
+                </ul>
+            </div>
+            <div class="col spacerInner"></div>
+            <div class="col col3">
+                <span class="columnTitle">Amazon-Zahlungsarten</span>
+                <ul>
+                    <li><a href="" class="column-item">Amazon Visa</a></li>
+                    <li><a href="" class="column-item">Einkaufen mit Punkten</a></li>
+                    <li><a href="" class="column-item">Barclays Finanzierung</a></li>
+                    <li><a href="" class="column-item">Amazon Business Amex Card</a></li>
+                    <li><a href="" class="column-item">Gutscheine</a></li>
+                    <li><a href="" class="column-item">Monatsabrechnung</a></li>
+                    <li><a href="" class="column-item">Bankeinzug</a></li>
+                    <li><a href="" class="column-item">Amazon-Währungsrechner</a></li>
+                    <li><a href="" class="column-item">Main Amazon-Konto aufladen</a></li>
+                    <li><a href="" class="column-item">Amazon vor Ort aufladen</a></li>
+                </ul>
+            </div>
+            <div class="col spacerInner"></div>
+            <div class="col col4">
+                <span class="columnTitle">Wir helfen dir</span>
+                <ul>
+                    <li><a href="" class="column-item">Amazon und COVID-19</a></li>
+                    <li><a href="" class="column-item">Lieferung verfolgen oder bestellung anzeigen</a></li>
+                    <li><a href="" class="column-item">Versand und Verfügbarkeit</a></li>
+                    <li><a href="" class="column-item">Amazon Prime</a></li>
+                    <li><a href="" class="column-item">Rückgabe und Ersatz</a></li>
+                    <li><a href="" class="column-item">Recycling (einschlißlich Entsorgung von Elektro- & Elektronikalgeräte)</a></li>
+                    <li><a href="" class="column-item">Vertraege kuendigen</a></li>
+                    <li><a href="" class="column-item">Vodafone-Vertraege kündigen</a></li>
+                    <li><a href="" class="column-item">Meine Inhalte und Geräte</a></li>
+                    <li><a href="" class="column-item">Rückrufe und Warnmeldungen zur Produktsicherheit</a></li>
+                    <li><a href="" class="column-item">Amazon App</a></li>
+                    <li><a href="" class="column-item">Kundenservice</a></li>
+                    <li><a href="" class="column-item">Barrierefreiheit</a></li>
+                    <li><a href="" class="column-item">Wunschzettel</a></li>
+                    <li><a href="" class="column-item">Illegalen Inhalt melden</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-footer-linie"></div>
+        <div class="nav-footer-with-amazon-logo">
+            <img src="{{ asset('assets/images/amazon-logo.png') }}" class="navFooterAmazonLogo">
+            <div class="lang-and-country-div">
+                <a href="#" class="lang">[ ] Deutsch</a>
+                <a href="#" class="country">[ ] Deutschland</a>
+            </div>
+        </div>
+        <div class="beforeLastnavFooter">
+            <div class="inner-div">
+                <ul>
+                    <li class="item">
+                        <a href="#">
+                            <h5 class="item_heading">Amazon Advertising</h5>
+                            <span class="text">Kunden finden, gewinnen<br>und binden</span>
+                        </a>
+                    </li>
+                    <li class="navFooterSpacer"></li>
+                    <li class="item">
+                        <a href="#">
+                            <h5 class="item_heading">Amazon Music</h5>
+                            <span class="text">Streame Millionen<br>von Songs</span>
+                        </a>
+                    </li>
+                    <li class="navFooterSpacer"></li>
+                    <li class="item">
+                        <a href="#">
+                            <h5 class="item_heading">AbeBooks</h5>
+                            <span class="text">Buecher, Kunst<br>& Stammelobjekte</span>
+                        </a>
+                    </li>
+                    <li class="navFooterSpacer"></li>
+                    <li class="item">
+                        <a href="#">
+                            <h5 class="item_heading">Amazon Web Services</h5>
+                            <span class="text">Cloud Computing Dienste<br>von Amazon</span>
+                        </a>
+                    </li>
+                    <li class="navFooterSpacer"></li>
+                    <li class="item">
+                        <a href="#">
+                            <h5 class="item_heading">Audible</h5>
+                            <span class="text">Hoerbuecher<br>herunterladen</span>
+                        </a>
+                    </li>
+                    <li class="navFooterSpacer"></li>
+                    <li class="item">
+                        <a href="#">
+                            <h5 class="item_heading">ImDb</h5>
+                            <span class="text">Filme, TV<br>& Stars</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="item">
+                        <a href="#">
+                            <h5 class="item_heading">Kindle Direct Publishing</h5>
+                            <span class="text">Deine e-Book<br>veroeffentlichen</span>
+                        </a>
+                    </li>
+                    <li class="navFooterSpacer"></li>
+                    <li class="item">
+                        <a href="#">
+                            <h5 class="item_heading">Shopbop</h5>
+                            <span class="text">Designer<br>Modemarken</span>
+                        </a>
+                    </li>
+                    <li class="navFooterSpacer"></li>
+                    <li class="item">
+                        <a href="#">
+                            <h5 class="item_heading">Amazon Retourenkauf</h5>
+                            <span class="text">Reduzierte B-Ware<br></span>
+                        </a>
+                    </li>
+                    <li class="navFooterSpacer"></li>
+                    <li class="item">
+                        <a href="#">
+                            <h5 class="item_heading">ZVAB</h5>
+                            <span class="text">Zentrales Verzeichnis<br>Antiquarischer Buecher und mehr</span>
+                        </a>
+                    </li>
+                    <li class="navFooterSpacer"></li>
+                    <li class="item">
+                        <a href="#">
+                            <h5 class="item_heading">Amazon Business</h5>
+                            <span class="text">Mengenrabatte, Business-Preise und mehr<br>Fuer unternehmen</span>
+                        </a>
+                    </li>
+                    <li class="navFooterSpacer"></li>
+                    <li class="item">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navFooterCopyright">
+            <ul>
+                <li><a href="#">Unsere AGB</a></li>
+                <li><a href="#">Datenschutzerklaerung</a></li>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Hinweise zu Cookies</a></li>
+                <li><a href="#">Hinweise zu interessenbasierter Werbung</a></li>
+            </ul>
+            <span>@1996-2025 Amazon.com, Inc. oder Partnerunternehmer</span>
+        </div>
+    </footer>
+
+    <script src="{{ asset('assets/js/bootstrap.bundle.js') }}"></script>
+    <script src="{{ asset('assets/js/script.js') }}"></script>
+</body>
+</html>

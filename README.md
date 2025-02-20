@@ -11,3 +11,16 @@ Um die Web-App local im Laufe zu bringen, benötigt man einen Lokalen Server wie
 
 ## Vampire Survivors:
 Ein kleines Spiel, das sich das wohlbekannte VAMPIRE SURVIVORS ähnelt.
+
+## tic_tac_toe Spiel
+Tic Tac Toe-Spiel
+
+## amazon_project (Amazon-Homepage (FRONTEND) mit Symfony)
+Dieses Projekt ist der Nachbau der Homepage ([amazon.de](https://www.amazon.de/)) des Onlineversandhändlers AMAZON mit dem PHP-Framwork.
+Die Seite wurde mit ausschließlich HTML in Twig-Template, CSS + Bootstrap und JavaScript entwickelt.
+
+So wird das Projekt gestartet:
+    - XAMPP installieren
+    - den Ordner amazon_project in den htdocs-Ordner von XAMPP (C:\xampp\htdocs) einfügen
+    - Apache-Server in XAMPP starten
+    - Im Browser folgender Link abrufen: http://localhost/amazon_project/public/index.php

@@ -1,0 +1,226 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+    <div class="pageContent">
+        <div class="carousel">
+            <button class="prev">&lt;</button>
+            <div class="carousel-images">
+            <img src="{{ asset('assets/images/img/bild1.jpg')}}" alt="Bild 1" class="active">
+            <img src="{{ asset('assets/images/img/bild2.jpg')}}" alt="Bild 2">
+            <img src="{{ asset('assets/images/img/bild3.jpg')}}" alt="Bild 3">
+            <img src="{{ asset('assets/images/img/bild4.jpg')}}" alt="Bild 4">
+            <img src="{{ asset('assets/images/img/bild5.jpg')}}" alt="Bild 5">
+            </div>
+            <button class="next">&gt;</button>
+        </div>
+        <div class="container-products">
+            <div class="horizontal-div hd1">
+                <div class="h-div1">
+                    <div class="product-name">Produktname 1</div>
+                    <span class="product-image">1</span>
+                    <a href=""><div class="link">Angebote</div></a>
+                </div>
+                <div class="h-div1">
+                    <div class="product-name">Produktname 2</div>
+                    <span class="product-image">2</span>
+                    <a href=""><div class="link">Mehr</div></a>
+                </div>
+                <div class="h-div1">
+                    <div class="product-name">Produktname 3</div>
+                    <span class="product-image">3</span>
+                    <a href=""><div class="link">Rabatte</div></a>
+                </div>
+                <div class="h-div1">
+                    <div class="product-name">Produktname 4</div>
+                    <span class="product-image">4</span>
+                    <a href=""><div class="link">Mehr wissen</div></a>
+                </div>
+            </div>
+            <div class="horizontal-div hd2">
+                <div class="h-div2">
+                    <div class="product-name">Produktname 5</div>
+                    <span class="product-image">5</span>
+                    <a href=""><div class="link">Angebote</div></a>
+                </div>
+                <div class="h-div2">
+                    <div class="product-name">Produktname 6</div>
+                    <span class="product-image">6</span>
+                    <a href=""><div class="link">Entdecken</div></a>
+                </div>
+                <div class="h-div2">
+                    <div class="product-name">Produktgruppe</div>
+                    <div class="product-group">
+                        <span class="product-group-1 pg">7</span>
+                        <span class="product-group-2 pg">8</span>
+                        <span class="product-group-3 pg">9</span>
+                        <span class="product-group-4 pg">10</span>
+                        <span class="product-group-1 pg">11</span>
+                        <span class="product-group-2 pg">12</span>
+                    </div>
+                    <a href=""><div class="link">Kaufen</div></a>
+                </div>
+                <div class="h-div2">
+                    <div class="product-name">Produktname 13</div>
+                    <span class="product-image">13</span>
+                    <a href=""><div class="link">Kunde werben</div></a>
+                </div>
+                <div class="h-div2">
+                    <div class="product-name">Produktname 14</div>
+                    <span class="product-image">14</span>
+                    <a href=""><div class="link">Anrufen</div></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-products">
+            <button class="carousel-btn prev">&lt;</button>
+            <div class="carousel-container">
+                <div class="item">15</div>
+                <div class="item">16</div>
+                <div class="item">17</div>
+                <div class="item">18</div>
+                <div class="item">19</div>
+                <div class="item">20</div>
+                <div class="item">21</div>
+                <div class="item">22</div>
+                <div class="item">23</div>
+                <div class="item">24</div>
+                <div class="item">25</div>
+                <div class="item">26</div>
+                <div class="item">27</div>
+                <div class="item">28</div>
+                <div class="item">29</div>
+                <div class="item">30</div>
+            </div>
+            <button class="carousel-btn next">&gt;</button>
+        </div>
+
+        <div class="state-signin">
+            <span class="inspiration">Inspieiert von deinem Browserverlauf</span>
+            <div class="carousel-products2">
+            <button class="carousel-btn2 prev">&lt;</button>
+                <div class="carousel-container2">
+                    <div class="prod">
+                        <div class="item2">31</div>
+                        <div class="description">
+                            <a href=""><span class="prod-name">Produkt 31</span></a>
+                            <span class="prod-price"><strong>9,99 EUR</strong></span>
+                            <div class="notice">
+                                <span>Erhalte es bis <strong>Donnerstag, 30. Februar</strong></span>
+                                <span>KOSTENFREIER Versand durch Amazon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod">
+                        <div class="item2">32</div>
+                        <div class="description">
+                            <a href=""><span class="prod-name">Produkt 32</span></a>
+                            <span class="prod-price"><strong>11,99 EUR</strong></span>
+                            <div class="notice">
+                                <span>Erhalte es bis <strong>Donnerstag, 30. Februar</strong></span>
+                                <span>KOSTENFREIER Versand durch Amazon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod">
+                        <div class="item2">33</div>
+                        <div class="description">
+                            <a href=""><span class="prod-name">Produkt 33</span></a>
+                            <span class="prod-price"><strong>9,99 EUR</strong></span>
+                            <div class="notice">
+                                <span>Erhalte es bis <strong>Donnerstag, 30. Februar</strong></span>
+                                <span>KOSTENFREIER Versand durch Amazon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod">
+                        <div class="item2">34</div>
+                        <div class="description">
+                            <a href=""><span class="prod-name">Produkt 34</span></a>
+                            <span class="prod-price"><strong>9,99 EUR</strong></span>
+                            <div class="notice">
+                                <span>Erhalte es bis <strong>Donnerstag, 30. Februar</strong></span>
+                                <span>KOSTENFREIER Versand durch Amazon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod">
+                        <div class="item2">35</div>
+                        <div class="description">
+                            <a href=""><span class="prod-name">Produkt 35</span></a>
+                            <span class="prod-price"><strong>9,99 EUR</strong></span>
+                            <div class="notice">
+                                <span>Erhalte es bis <strong>Donnerstag, 30. Februar</strong></span>
+                                <span>KOSTENFREIER Versand durch Amazon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod">
+                        <div class="item2">36</div>
+                        <div class="description">
+                            <a href=""><span class="prod-name">Produkt 36</span></a>
+                            <span class="prod-price"><strong>9,99 EUR</strong></span>
+                            <div class="notice">
+                                <span>Erhalte es bis <strong>Donnerstag, 30. Februar</strong></span>
+                                <span>KOSTENFREIER Versand durch Amazon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod">
+                        <div class="item2">37</div>
+                        <div class="description">
+                            <a href=""><span class="prod-name">Produkt 37</span></a>
+                            <span class="prod-price"><strong>9,99 EUR</strong></span>
+                            <div class="notice">
+                                <span>Erhalte es bis <strong>Donnerstag, 30. Februar</strong></span>
+                                <span>KOSTENFREIER Versand durch Amazon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod">
+                        <div class="item2">38</div>
+                        <div class="description">
+                            <a href=""><span class="prod-name">Produkt 38</span></a>
+                            <span class="prod-price"><strong>9,99 EUR</strong></span>
+                            <div class="notice">
+                                <span>Erhalte es bis <strong>Donnerstag, 30. Februar</strong></span>
+                                <span>KOSTENFREIER Versand durch Amazon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod">
+                        <div class="item2">39</div>
+                        <div class="description">
+                            <a href=""><span class="prod-name">Produkt 39</span></a>
+                            <span class="prod-price"><strong>9,99 EUR</strong></span>
+                            <div class="notice">
+                                <span>Erhalte es bis <strong>Donnerstag, 30. Februar</strong></span>
+                                <span>KOSTENFREIER Versand durch Amazon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod">
+                        <div class="item2">40</div>
+                        <div class="description">
+                            <a href=""><span class="prod-name">Produkt 40</span></a>
+                            <span class="prod-price"><strong>9,99 EUR</strong></span>
+                            <div class="notice">
+                                <span>Erhalte es bis <strong>Donnerstag, 30. Februar</strong></span>
+                                <span>KOSTENFREIER Versand durch Amazon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <button class="carousel-btn2 next">&gt;</button>
+        </div>
+
+            <div class="state-signin">
+                <h2>Personalisierte Empfehlungen anzeigen</h2>
+                <div class="a-button">Anmelden</div>
+                <div class="new-customer">Neuer Kunde?<a href=""> Starte hier</a></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
