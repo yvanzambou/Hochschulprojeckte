@@ -17,7 +17,7 @@ Tic Tac Toe-Spiel
 
 ## amazon_project (Amazon-Homepage (FRONTEND) mit Symfony)
 Dieses Projekt ist der Nachbau der Homepage ([amazon.de](https://www.amazon.de/)) des Onlineversandhändlers AMAZON mit dem PHP-Framwork.
-Die Seite wurde mit ausschließlich HTML in Twig-Template, CSS + Bootstrap und JavaScript entwickelt.
+Die Seite wurde ausschließlich mit HTML in Twig-Template, CSS + Bootstrap und JavaScript entwickelt.
 
 So wird das Projekt gestartet:
 - XAMPP installieren
